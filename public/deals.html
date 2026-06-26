@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meilleures offres de poulet - Poulet Industrie</title>
+  <link rel="icon" href="/assets/images/flavicon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo"><img src="/assets/images/flavicon.png" class="emoji-img" alt=""><a href="/">Poulet Industrie</a></div>
+    <button class="menu-toggle">Menu</button>
+    <div class="nav-links">
+      <a href="/">Accueil</a><a href="/pourquoi-manger.html">Pourquoi manger du poulet ?</a><a href="/poulet-maison.html">Poulet a la maison</a>
+      <a href="/deals.html">Meilleures offres</a><a href="/galerie.html">Galerie</a><a href="/flappy-chicken.html">Flappy Chicken</a>
+      <a href="/communaute.html">Communaute</a><a href="/roi.html">Roi Poulet</a>
+      <div class="lang-switch"><button class="lang-btn" data-lang="fr">FR</button><button class="lang-btn" data-lang="en">EN</button></div>
+    </div>
+  </nav>
+  <div class="hero" style="padding:2rem;">
+    <h1 class="animated-chicken"><img src="https://images.unsplash.com/photo-1771160014674-2fb716459edb?w=48&h=48&fit=crop" class="emoji-img" alt=""> Les meilleures offres de poulet <img src="https://images.unsplash.com/photo-1771160014674-2fb716459edb?w=48&h=48&fit=crop" class="emoji-img" alt=""></h1>
+    <p>On a compare tous les supermarches pour vous ! Voici ou acheter le poulet le moins cher.</p>
+  </div>
+  <div class="container">
+    <section>
+      <h2 class="section-title">Comparateur de prix du poulet</h2>
+      <table class="deal-table">
+        <thead><tr><th>Enseigne</th><th>Produit</th><th>Prix</th><th>Note</th></tr></thead>
+        <tbody id="deals-body"><tr><td colspan="4">Chargement...</td></tr></tbody>
+      </table>
+      <div style="margin-top:1rem;text-align:center;">
+        <button class="btn btn-sm" onclick="fetch('/api/deals?sort=prix').then(r=>r.json()).then(d=>document.getElementById('deals-body').innerHTML=d.map(x=>'<tr><td><img src=\"https://images.unsplash.com/photo-1771160014674-2fb716459edb?w=20&h=20&fit=crop\" class=\"emoji-img\"> '+x.enseigne+'</td><td>'+x.produit+'</td><td><strong>'+x.prix+'</strong></td><td>'+x.note+'</td></tr>').join(''))">Trier par prix</button>
+        <button class="btn btn-sm" onclick="fetch('/api/deals?sort=note').then(r=>r.json()).then(d=>document.getElementById('deals-body').innerHTML=d.map(x=>'<tr><td><img src=\"https://images.unsplash.com/photo-1771160014674-2fb716459edb?w=20&h=20&fit=crop\" class=\"emoji-img\"> '+x.enseigne+'</td><td>'+x.produit+'</td><td><strong>'+x.prix+'</strong></td><td>'+x.note+'</td></tr>').join(''))">Trier par note</button>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-title">Le poulet le moins cher</h2>
+      <div class="card-grid">
+        <div class="card" style="border-top-color: gold;"><h3>Poulet standard</h3><p>Entre 5.49EUR et 6.50EUR/kg chez Aldi, Lidl et Leclerc.</p></div>
+        <div class="card" style="border-top-color: silver;"><h3>Poulet label rouge</h3><p>Entre 7EUR et 9EUR/kg. Un poulet de meilleure qualite.</p></div>
+        <div class="card" style="border-top-color: #CD7F32;"><h3>Poulet bio</h3><p>Entre 10EUR et 15EUR/kg. Plus cher mais le gout incomparable !</p></div>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-title">Astuces pour economiser</h2>
+      <div class="card-grid">
+        <div class="card"><h3>Achetez le poulet entier</h3><p>Le poulet entier est moins cher au kilo que les filets.</p></div>
+        <div class="card"><h3>Profitez des promos</h3><p>Les poulets sont souvent en promotion le jeudi et le samedi.</p></div>
+        <div class="card"><h3>Achetez et congelez</h3><p>Quand le poulet est en promo, achetez-en plusieurs.</p></div>
+        <div class="card"><h3>Decoupez vous-meme</h3><p>Vous economiserez 30% par rapport aux filets prepares.</p></div>
+      </div>
+    </section>
+    <div class="chicken-fact-box"><h3>Conseil du Roi Poulet</h3><p>"Le meilleur poulet est celui qui est en promotion aujourd'hui !"</p></div>
+  </div>
+  <div id="cookie-banner" class="cookie-banner"><p>Ce site utilise des cookies-poulets. <a href="/privacy.html">En savoir plus</a></p><button id="accept-cookies" class="btn">OK</button></div>
+  <footer><p>Poulet Industrie - Le poulet c'est la vie !</p><p><a href="/privacy.html">Poulets de Confidentialite</a> | <a href="/terms.html">Conditions d'Utilisation</a> | <a href="/communaute.html">Communaute</a> | <a href="/roi.html">Roi Poulet</a></p></footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

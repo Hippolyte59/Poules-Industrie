@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Chicken - Poulet Industrie</title>
+  <link rel="icon" href="/assets/images/flavicon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo"><img src="/assets/images/flavicon.png" class="emoji-img" alt=""><a href="/">Poulet Industrie</a></div>
+    <button class="menu-toggle">Menu</button>
+    <div class="nav-links">
+      <a href="/">Accueil</a><a href="/pourquoi-manger.html">Pourquoi manger du poulet ?</a><a href="/poulet-maison.html">Poulet a la maison</a>
+      <a href="/deals.html">Meilleures offres</a><a href="/galerie.html">Galerie</a><a href="/flappy-chicken.html">Flappy Chicken</a>
+      <a href="/communaute.html">Communaute</a><a href="/roi.html">Roi Poulet</a>
+      <div class="lang-switch"><button class="lang-btn" data-lang="fr">FR</button><button class="lang-btn" data-lang="en">EN</button></div>
+    </div>
+  </nav>
+  <div class="hero" style="padding:1.5rem;">
+    <h1 class="animated-chicken"><img src="https://images.unsplash.com/photo-1725477905503-cb1090e013e0?w=48&h=48&fit=crop" class="emoji-img" alt=""> Flappy Chicken <img src="https://images.unsplash.com/photo-1725477905503-cb1090e013e0?w=48&h=48&fit=crop" class="emoji-img" alt=""></h1>
+    <p>Le jeu ou un poulet doit traverser la route en evitant les obstacles !</p>
+  </div>
+  <div class="container">
+    <section>
+      <div class="game-container">
+        <div class="game-score" data-i18n-composite="score">Score : <span id="score">0</span> | Meilleur : <span id="highscore">0</span></div>
+        <div>
+          <label for="difficulty" style="font-weight:bold;">Difficulte :</label>
+          <select id="difficulty" style="padding:0.4rem;border-radius:8px;border:2px solid var(--chicken-orange);">
+            <option value="easy">Facile</option>
+            <option value="normal" selected>Normal</option>
+            <option value="hard">Difficile</option>
+            <option value="impossible">Impossible</option>
+          </select>
+        </div>
+        <canvas id="gameCanvas" width="400" height="500"></canvas>
+        <button id="startGame" class="btn">Commencer a jouer !</button>
+        <p style="color:#666;">Cliquez ou appuyez sur Espace/↑ pour faire voler le poulet !</p>
+      </div>
+    </section>
+  </div>
+  <div id="cookie-banner" class="cookie-banner"><p>Ce site utilise des cookies-poulets. <a href="/privacy.html">En savoir plus</a></p><button id="accept-cookies" class="btn">OK</button></div>
+  <footer><p>Poulet Industrie - Le poulet c'est la vie !</p><p><a href="/privacy.html">Poulets de Confidentialite</a> | <a href="/terms.html">Conditions d'Utilisation</a> | <a href="/communaute.html">Communaute</a> | <a href="/roi.html">Roi Poulet</a></p></footer>
+  <script src="/assets/js/flappy.js"></script>
+</body>
+</html>

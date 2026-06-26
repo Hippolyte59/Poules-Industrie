@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Contact - Poulet Industrie">
+  <meta property="og:description" content="Contactez l'equipe Poulet Industrie.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1725477905503-cb1090e013e0?w=800&h=600&fit=crop">
+  <meta property="og:type" content="website">
+  <title data-i18n="nav.contact">Contact - Poulet Industrie</title>
+  <link rel="icon" href="/assets/images/flavicon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="/assets/images/flavicon.png" class="emoji-img" alt="">
+      <a href="/">Poulet Industrie</a>
+    </div>
+    <button class="menu-toggle">Menu</button>
+    <div class="nav-links">
+      <a href="/" data-i18n="nav.accueil">Accueil</a>
+      <a href="/pourquoi-manger.html" data-i18n="nav.pourquoi">Pourquoi manger du poulet ?</a>
+      <a href="/poulet-maison.html" data-i18n="nav.maison">Poulet a la maison</a>
+      <a href="/deals.html" data-i18n="nav.deals">Meilleures offres</a>
+      <a href="/recettes.html" data-i18n="nav.recettes">Recettes</a>
+      <a href="/galerie.html" data-i18n="nav.galerie">Galerie</a>
+      <a href="/flappy-chicken.html" data-i18n="nav.flappy">Flappy Chicken</a>
+      <a href="/communaute.html" data-i18n="nav.communaute">Communaute</a>
+      <a href="/roi.html" data-i18n="nav.roi">Roi Poulet</a>
+      <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+      <button id="dark-toggle" class="dark-toggle-btn" data-i18n="darkMode">Mode sombre</button>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1><img src="https://images.unsplash.com/photo-1725477905503-cb1090e013e0?w=48&h=48&fit=crop" class="emoji-img" alt=""> <span data-i18n="nav.contact">Contact</span> <img src="https://images.unsplash.com/photo-1725477905503-cb1090e013e0?w=48&h=48&fit=crop" class="emoji-img" alt=""></h1>
+    <p data-i18n="contactDesc">Une question, une suggestion ? Envoyez-nous un message !</p>
+  </div>
+
+  <div class="container">
+    <section>
+      <div class="contact-form">
+        <form id="contact-form">
+          <label data-i18n="contactName">Votre nom</label>
+          <input type="text" id="contact-name" name="name" required data-i18n-placeholder="contactNamePlaceholder">
+          <label data-i18n="contactEmail">Votre email</label>
+          <input type="email" id="contact-email" name="email" required data-i18n-placeholder="contactEmailPlaceholder">
+          <label data-i18n="contactMsg">Votre message</label>
+          <textarea id="contact-message" name="message" rows="5" required data-i18n-placeholder="contactMsgPlaceholder"></textarea>
+          <button type="submit" class="btn" data-i18n="contactSend">Envoyer</button>
+        </form>
+        <p id="contact-status" style="margin-top:1rem;text-align:center;font-weight:bold;"></p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p data-i18n="footer">Poulet Industrie - Le poulet c'est la vie !</p>
+    <p>
+      <a href="/privacy.html" data-i18n="privacy">Poulets de Confidentialite</a> |
+      <a href="/terms.html" data-i18n="terms">Conditions d'Utilisation</a> |
+      <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+    </p>
+    <form class="newsletter-form" style="margin-top:1rem;">
+      <input type="email" placeholder="Email newsletter" required data-i18n-placeholder="newsletterPlaceholder">
+      <button type="submit" class="btn btn-sm" data-i18n="newsletterBtn">Newsletter</button>
+      <span class="newsletter-status"></span>
+    </form>
+    <p style="margin-top:0.5rem;font-size:0.8rem;">2024 Poulet Industrie - <span data-i18n="rights">Tous droits reserves</span></p>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

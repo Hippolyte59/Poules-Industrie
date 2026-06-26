@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Recettes de Poulet - Poulet Industrie">
+  <meta property="og:description" content="Les meilleures recettes de poulet: roti, curry, salade et basquaise.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1757715378233-9c849d3416ea?w=800&h=600&fit=crop">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ItemList","name":"Recettes de Poulet","description":"Les meilleures recettes de poulet","itemListElement":[{"@type":"Recipe","name":"Poulet roti au four"},{"@type":"Recipe","name":"Poulet curry coco"},{"@type":"Recipe","name":"Salade de poulet grille"},{"@type":"Recipe","name":"Poulet basquaise"}]}
+  </script>
+  <title data-i18n="nav.recettes">Recettes de Poulet - Poulet Industrie</title>
+  <link rel="icon" href="/assets/images/flavicon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="/assets/images/flavicon.png" class="emoji-img" alt="">
+      <a href="/">Poulet Industrie</a>
+    </div>
+    <button class="menu-toggle">Menu</button>
+    <div class="nav-links">
+      <a href="/" data-i18n="nav.accueil">Accueil</a>
+      <a href="/pourquoi-manger.html" data-i18n="nav.pourquoi">Pourquoi manger du poulet ?</a>
+      <a href="/poulet-maison.html" data-i18n="nav.maison">Poulet a la maison</a>
+      <a href="/deals.html" data-i18n="nav.deals">Meilleures offres</a>
+      <a href="/recettes.html" data-i18n="nav.recettes">Recettes</a>
+      <a href="/galerie.html" data-i18n="nav.galerie">Galerie</a>
+      <a href="/flappy-chicken.html" data-i18n="nav.flappy">Flappy Chicken</a>
+      <a href="/communaute.html" data-i18n="nav.communaute">Communaute</a>
+      <a href="/roi.html" data-i18n="nav.roi">Roi Poulet</a>
+      <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+      <button id="dark-toggle" class="dark-toggle-btn" data-i18n="darkMode">Mode sombre</button>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1><img src="https://images.unsplash.com/photo-1757715378233-9c849d3416ea?w=48&h=48&fit=crop" class="emoji-img" alt=""> <span data-i18n="nav.recettes">Recettes de Poulet</span> <img src="https://images.unsplash.com/photo-1757715378233-9c849d3416ea?w=48&h=48&fit=crop" class="emoji-img" alt=""></h1>
+    <p data-i18n="recettesDesc">Les meilleures recettes pour cuisiner le poulet.</p>
+  </div>
+
+  <div class="container">
+    <section>
+      <div class="recipe-grid" id="recipe-list"><p data-i18n="home.loading">Chargement...</p></div>
+    </section>
+  </div>
+
+  <footer>
+    <p data-i18n="footer">Poulet Industrie - Le poulet c'est la vie !</p>
+    <p>
+      <a href="/privacy.html" data-i18n="privacy">Poulets de Confidentialite</a> |
+      <a href="/terms.html" data-i18n="terms">Conditions d'Utilisation</a> |
+      <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+    </p>
+    <form class="newsletter-form" style="margin-top:1rem;">
+      <input type="email" placeholder="Email newsletter" required data-i18n-placeholder="newsletterPlaceholder">
+      <button type="submit" class="btn btn-sm" data-i18n="newsletterBtn">Newsletter</button>
+      <span class="newsletter-status"></span>
+    </form>
+    <p style="margin-top:0.5rem;font-size:0.8rem;">2024 Poulet Industrie - <span data-i18n="rights">Tous droits reserves</span></p>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
